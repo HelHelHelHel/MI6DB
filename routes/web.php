@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/api/person', 'PersonController@index' );
+Auth::routes();
