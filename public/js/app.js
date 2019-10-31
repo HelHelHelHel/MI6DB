@@ -86,6 +86,7 @@
 /************************************************************************/
 /******/ ({
 
+<<<<<<< HEAD
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -32018,11 +32019,14 @@ function (_React$Component) {
 
 /***/ }),
 
+=======
+>>>>>>> d057f7a6662bbbe1f50f3cdafbb83eec7de128da
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
 /*! no exports provided */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32036,6 +32040,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App_Components_App_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('app'));
+=======
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\laravel_test\\MI6DB\\package.json: Error while parsing JSON - Unexpected token < in JSON at position 1363\n    at JSON.parse (<anonymous>)\n    at readConfigPackage (C:\\laravel_test\\MI6DB\\node_modules\\@babel\\core\\lib\\config\\files\\package.js:57:20)\n    at C:\\laravel_test\\MI6DB\\node_modules\\@babel\\core\\lib\\config\\files\\utils.js:29:12\n    at cachedFunction (C:\\laravel_test\\MI6DB\\node_modules\\@babel\\core\\lib\\config\\caching.js:33:19)\n    at findPackageData (C:\\laravel_test\\MI6DB\\node_modules\\@babel\\core\\lib\\config\\files\\package.js:33:11)\n    at buildRootChain (C:\\laravel_test\\MI6DB\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:105:85)\n    at loadPrivatePartialConfig (C:\\laravel_test\\MI6DB\\node_modules\\@babel\\core\\lib\\config\\partial.js:85:55)\n    at Object.loadPartialConfig (C:\\laravel_test\\MI6DB\\node_modules\\@babel\\core\\lib\\config\\partial.js:110:18)\n    at Object.<anonymous> (C:\\laravel_test\\MI6DB\\node_modules\\babel-loader\\lib\\index.js:144:26)\n    at Generator.next (<anonymous>)\n    at asyncGeneratorStep (C:\\laravel_test\\MI6DB\\node_modules\\babel-loader\\lib\\index.js:3:103)\n    at _next (C:\\laravel_test\\MI6DB\\node_modules\\babel-loader\\lib\\index.js:5:194)\n    at C:\\laravel_test\\MI6DB\\node_modules\\babel-loader\\lib\\index.js:5:364\n    at new Promise (<anonymous>)\n    at Object.<anonymous> (C:\\laravel_test\\MI6DB\\node_modules\\babel-loader\\lib\\index.js:5:97)\n    at Object.loader (C:\\laravel_test\\MI6DB\\node_modules\\babel-loader\\lib\\index.js:60:18)\n    at Object.<anonymous> (C:\\laravel_test\\MI6DB\\node_modules\\babel-loader\\lib\\index.js:55:12)");
+>>>>>>> d057f7a6662bbbe1f50f3cdafbb83eec7de128da
 
 /***/ }),
 
@@ -32057,8 +32066,13 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! /Users/user/web/bootcamp/MI6DB/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /Users/user/web/bootcamp/MI6DB/resources/sass/app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! C:\laravel_test\MI6DB\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laravel_test\MI6DB\resources\sass\app.scss */"./resources/sass/app.scss");
+>>>>>>> d057f7a6662bbbe1f50f3cdafbb83eec7de128da
 
 
 /***/ })
