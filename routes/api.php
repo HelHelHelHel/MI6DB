@@ -19,3 +19,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('/login', 'Api\LoginController@login');
 
+Route::group(['middleware' => ['auth:api']], function ($group) {    
+    
+    Route::get('/api/person', 'PersonController@index' );
+
+
+});
+
