@@ -13,7 +13,7 @@ class Person extends Model
 
     public function image() 
     {
-        return $this->hasOne('App\Image');
+        return $this->hasOne('App\Image', 'id');
     }
 
     public function status() 

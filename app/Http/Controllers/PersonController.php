@@ -9,6 +9,6 @@ class PersonController extends Controller
 {
     public function index()
     {
-        return Person::limit(20)->orderBy('name', 'asc')->get();
+        return Person::limit(20)->orderBy('name', 'asc')->with('image')->get();
     }
 }
