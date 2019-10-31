@@ -15,6 +15,9 @@ class CreateAliasesTable extends Migration
     {
         Schema::create('aliases', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('person_id');
+            $table->string('alias');
+
             $table->timestamps();
         });
     }
