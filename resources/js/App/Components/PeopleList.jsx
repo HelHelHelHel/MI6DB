@@ -14,7 +14,6 @@ export default class PeopleList extends React.Component {
            });
    }
    render() {
-       console.log(this.state.people);
        return (
            <>
                {this.state.people.map((item, i) =>
