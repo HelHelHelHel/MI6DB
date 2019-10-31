@@ -26,6 +26,7 @@ export default class PeopleList extends React.Component {
                 'Accept':       'application/json',
                 'Content-Type': 'application/json',
                 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                'Authorization': 'Bearer ' + token
             },
             body: JSON.stringify({
                 email: this.state.email,
@@ -33,12 +34,12 @@ export default class PeopleList extends React.Component {
             })
         })
         .then(response => response.json())
-        .then(data => {
-            if (data.token) {
-                this.props.success(data.token)
+        .then(response => {
+            // console.log(response.data.token)
+            if (response.data.token) {
+                this.props.success(response.data.token)
             }
         })
-
     }
     
    render() {
@@ -55,7 +56,7 @@ export default class PeopleList extends React.Component {
                         <input className="form-control" type="text" name="password" value={this.state.password} placeholder="password" onChange={this.handlePasswordChange}/>
                     </div>
             
-                    <button type="submit" className="btn btn-primary" >Sign up</button>
+                    <button type="submit" className="btn btn-primary">Sign up</button>
         
                 </form>
             </>

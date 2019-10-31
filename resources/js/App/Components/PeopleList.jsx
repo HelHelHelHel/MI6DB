@@ -7,7 +7,13 @@ export default class PeopleList extends React.Component {
        };
    }
    componentDidMount() {
-       fetch('/api/person')
+       console.log(this.props.token)
+       fetch('/api/person', {
+           method: 'GET',
+           headers: {
+                'Authorization': 'Bearer ' + this.props.token
+           }
+       })
            .then(response => response.json())
            .then(list => {
                this.setState({ people: list });

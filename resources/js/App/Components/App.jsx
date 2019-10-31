@@ -1,6 +1,7 @@
 import React from 'react';
 import PeopleList from './PeopleList.jsx';
 import LoginForm from './LoginForm.jsx';
+
 export default class App extends React.Component {
     constructor(props){
         super(props);
@@ -21,9 +22,10 @@ export default class App extends React.Component {
             })
         }
     }
+
     onLoginSuccess = (token) => {
-        console.log(token);
-        window.localStorage.setItem('_token', token)
+        // console.log(token);
+        window.localStorage.setItem('_token', this.props.token);
      
         this.setState({
             logged_in: true,
